@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.78)),
+    url(../img/anime-world.jpg) no-repeat center / cover;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: #fecf00;
+  font-family: "Redressed", cursive;
+  font-size: 30px;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.navbar__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.navbar__link:hover,
+.navbar__item.active .navbar__link {
+  color: #fecf00;
+}
+
+.hero {
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 900px;
+}
+
+.hero__title {
+    color: rgba(255, 255, 255, 0.5);
+    color: #fecf008c;
+    font-size: 60px;
+    text-align: center;
+  font-family: "Redressed", cursive;
+}
