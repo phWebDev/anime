@@ -18,6 +18,8 @@
 
 .navbar {
   padding: 15px 0;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
 }
 
 .navbar__inner {
@@ -57,20 +59,92 @@
 }
 
 .hero {
-    min-height: 92vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__content {
-    max-width: 900px;
+  max-width: 900px;
 }
 
 .hero__title {
-    color: rgba(255, 255, 255, 0.5);
-    color: #fecf008c;
-    font-size: 60px;
-    text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  color: #fecf008c;
+  font-size: 60px;
+  text-align: center;
   font-family: "Redressed", cursive;
+}
+
+.section__top {
+    padding-bottom: 50px;
+}
+
+.section__title {
+  font-family: "Redressed", cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #ffc400;
+}
+
+.genre {
+  padding: 80px 0;
+}
+
+.genre__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.genre__card {
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.genre__img--box {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.genre__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.genre__card:hover .genre__img{
+    transform: scale(1.2);
+}
+
+.genre__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.9));
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.genre__title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.genre__card:hover .genre__title{
+    transform: translateY(-20px);
+    color: #ffc400;
 }
